@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* CONTAINER GENERAL*/
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer";
+    gap: 10px;
+}
+
+/* HEADER*/
+header {
+    grid-area: header;
+    background-color: #d0b0ba;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+    margin: 10px;
+}
+
+/*MENU*/
+
+menu {
+    grid-area: menu;
+    background-color: #d0b0ba;
+    margin-top: 20px;
+}
+
+h3 {
+    margin: 30px;
+    font-size: large;
+    color: #fff;
+}
+
+.lista{
+    display: row;
+    margin: 20px;
+    color: #fff;
+    font-size: medium;
+}
+
+small {
+    color: gainsboro;
+}
+
+/* CARDS */
+main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards {
+    background-color: #fff;
+    box-shadow: opx 4px 8px opx rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    height: 225px;
+    background-color: #66f;
+
+}
+
+.cards .img-one {
+    background-image: url(../img/imagen1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-two {
+    background-image: url(../img/imagen2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-three {
+    background-image: url(../img/imagen3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-four {
+    background-image: url(../img/imagen4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-five {
+    background-image: url(../img/imagen5.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img-six {
+    background-image: url(../img/imagen6.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.content h2 {
+    letter-spacing: 1.5px;
+    margin: 20px;
+    color: grey;
+}
+
+.content p {
+    margin: 20px 0px;
+    font-size: 19px;
+    color: grey;
+}
+/* BOTONES */
+.content a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: #d0b0ba;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #d0b0ba;
+}
+
+h4 {
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+    color: #fff;
+}
